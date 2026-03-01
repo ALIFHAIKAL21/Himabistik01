@@ -52,11 +52,10 @@ export default function Home() {
   return (
     <main className="bg-background text-foreground">
       {/* Modern Navigation Header */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-background/95 backdrop-blur-xl shadow-lg border-b border-primary/10' 
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
+          ? 'bg-background/95 backdrop-blur-xl shadow-lg border-b border-primary/10'
           : 'bg-transparent'
-      }`}>
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
@@ -76,11 +75,10 @@ export default function Home() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${
-                    activeNav === item.id
+                  className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${activeNav === item.id
                       ? 'bg-primary text-primary-foreground shadow-lg'
                       : 'text-foreground hover:bg-primary/10'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -108,11 +106,10 @@ export default function Home() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`w-full text-left px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${
-                    activeNav === item.id
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm ${activeNav === item.id
                       ? 'bg-primary text-primary-foreground'
                       : 'text-foreground hover:bg-primary/10'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -156,7 +153,7 @@ export default function Home() {
         {/* Decorative gradient blobs - responsive */}
         <div className="absolute top-5 right-5 sm:top-10 sm:right-10 w-48 h-48 sm:w-96 sm:h-96 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
         <div className="absolute bottom-5 left-5 sm:bottom-10 sm:left-10 w-48 h-48 sm:w-96 sm:h-96 bg-accent/10 rounded-full blur-3xl opacity-60"></div>
-        
+
         <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 animate-slide-up">
           {/* Candidate Carousel - Photo Carousel (16:9 aspect ratio) */}
           <div className="carousel-container flex justify-center mb-8 sm:mb-12">
@@ -165,7 +162,7 @@ export default function Home() {
                 {/* Card with padding at top */}
                 <div className="pt-8 sm:pt-12 px-4 sm:px-6">
                   <div className="relative w-full aspect-video bg-background rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group cursor-pointer overflow-hidden border-4 border-primary/20 hover:border-primary/40 transition-colors duration-300">
-                    
+
                     {/* Photo 1: Arwan & Ica Duo */}
                     <div className="carousel-image-0 absolute inset-0">
                       <Image
@@ -269,7 +266,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-1 gap-8">
-            <div 
+            <div
               className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-primary/5 hover:to-accent/5 group cursor-pointer border-2 border-transparent hover:border-primary/20"
               data-aos="zoom-in"
             >
@@ -436,22 +433,24 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-5 group-hover:text-accent transition-colors duration-300">
-                  HIMA Responsif 72 Jam<br/><span className="text-primary">(HR72)</span>
+                  HIMA Responsif 72 Jam<br /><span className="text-primary">(HR72)</span>
                 </h3>
-                <p className="text-base sm:text-lg text-muted-foreground mb-6 leading-relaxed group-hover:text-foreground/70 transition-colors duration-300 text-pretty">
-                  Komitmen organisasi untuk merespons setiap kebutuhan, pertanyaan, atau permasalahan dari anggota dalam waktu maksimal 72 jam dengan solusi nyata dan terukur.
+                <p className="text-base text-start  text-muted-foreground mb-6 leading-relaxed group-hover:text-foreground/70 transition-colors duration-300 text-pretty">
+                  HR72 adalah komitmen pelayanan organisasi untuk memberikan respon resmi dan tindak lanjut awal maksimal dalam 72 jam kerja terhadap setiap aspirasi, pertanyaan, maupun permasalahan mahasiswa.
+
+                  Setiap masukan dicatat secara sistematis, dianalisis, dan progresnya dikomunikasikan secara transparan agar mahasiswa memperoleh kejelasan, bukan sekadar jawaban.
+
+                  Penyelesaian akhir menyesuaikan tingkat kompleksitas dan pihak yang terlibat, namun seluruh proses tetap dipantau hingga tuntas.
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed group-hover:text-foreground/70 transition-colors duration-300 text-pretty">
-                  Program ini mencerminkan dedikasi kami terhadap kepedulian dan ketanggapan yang menjadi fondasi organisasi yang sehat dan progresif bagi seluruh anggota.
-                </p>
+
               </div>
 
               <div className="flex-1 w-full">
                 <div className="space-y-4 sm:space-y-5">
                   {[
-                    { label: "Jam 0", desc: "Penerimaan Masukan", icon: "📥" },
-                    { label: "Jam 24", desc: "Analisis & Perencanaan", icon: "📊" },
-                    { label: "Jam 72", desc: "Solusi & Implementasi", icon: "✅" }
+                    { label: "Jam 0", desc: "Penerimaan & Pencatatan Aspirasi", icon: "📥" },
+                    { label: "24 Jam Pertama", desc: "Analisis Awal & Koordinasi Internal", icon: "📊" },
+                    { label: "Maksimal 72 Jam", desc: "Respon Resmi & Rencana Tindak Lanjut", icon: "✅" }
                   ].map((step, idx) => (
                     <div key={idx} className="flex gap-4 items-start group/step cursor-pointer p-4 rounded-xl hover:bg-white/50 transition-all duration-300" data-aos="fade-right" data-aos-delay={idx * 100}>
                       <div className="flex-shrink-0">
