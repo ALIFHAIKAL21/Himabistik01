@@ -1,6 +1,6 @@
 'use client';
 
-import { ChevronDown, Zap, Users, Code, Smartphone, Database, Clock, CheckCircle, Search, Menu, X } from 'lucide-react';
+import { ChevronDown, Zap, Users, Code, Smartphone, Database, Clock, CheckCircle, Search, Menu, X, ClipboardList, MessageCircle, Cpu, Handshake, Megaphone } from 'lucide-react';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
@@ -278,10 +278,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
-                    Organisasi Digital, Terstruktur, dan Adaptif
+                    Organisasi Adaptif, Responsif, dan Solutif
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground/70 transition-colors duration-300 text-pretty">
-                    Membangun HIMAMBISTIK sebagai organisasi yang memanfaatkan teknologi digital, memiliki sistem yang jelas dan terukur, serta mampu beradaptasi dengan cepat terhadap perubahan zaman untuk menciptakan dampak positif yang berkelanjutan.
+                    Mewujudkan Himambistik sebagai organisasi yang adaptif, responsif, dan solutif dalam mendukung pengembangan akademik dan profesional mahasiswa Administrasi Bisnis Sektor Publik dengan sistem yang terstruktur dan berkelanjutan.
                   </p>
                 </div>
               </div>
@@ -305,37 +305,37 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-5 sm:gap-6 lg:gap-7">
             {[
-              {
-                icon: Code,
-                title: "Transformasi Digital",
-                description: "Mengintegrasikan teknologi dalam setiap aspek operasional organisasi untuk efisiensi maksimal.",
-                color: "from-blue-500/10 to-blue-400/5"
-              },
-              {
-                icon: Users,
-                title: "Pemberdayaan Anggota",
-                description: "Mengembangkan potensi setiap anggota melalui program pelatihan dan kesempatan berkembang.",
-                color: "from-green-500/10 to-green-400/5"
-              },
-              {
-                icon: Zap,
-                title: "Responsivitas Cepat",
-                description: "Memastikan organisasi dapat merespons kebutuhan dan tantangan dengan cepat dan tepat.",
-                color: "from-yellow-500/10 to-yellow-400/5"
-              },
-              {
-                icon: Database,
-                title: "Sistem Terukur",
-                description: "Membangun sistem dan prosedur yang jelas, terukur, dan dapat dievaluasi secara berkala.",
-                color: "from-purple-500/10 to-purple-400/5"
-              },
-              {
-                icon: CheckCircle,
-                title: "Solusi Nyata",
-                description: "Menghadirkan program-program yang memberikan solusi konkret terhadap permasalahan nyata.",
-                color: "from-red-500/10 to-red-400/5"
-              }
-            ].map((item, idx) => (
+  {
+    icon: ClipboardList, // atau FileText
+    title: "Program Relevan & Berkembang",
+    description: "Menghadirkan program kerja yang relevan dengan kebutuhan akademik serta mendukung pengembangan kompetensi mahasiswa secara berkelanjutan.",
+    color: "from-blue-500/10 to-blue-400/5"
+  },
+  {
+    icon: MessageCircle, // atau Headphones
+    title: "Pelayanan & Komunikasi Responsif",
+    description: "Meningkatkan kualitas pelayanan dan komunikasi organisasi yang terbuka, cepat, dan responsif terhadap kebutuhan mahasiswa.",
+    color: "from-green-500/10 to-green-400/5"
+  },
+  {
+    icon: Cpu, // atau Smartphone / Globe
+    title: "Transformasi Digital",
+    description: "Mendorong pemanfaatan teknologi digital dalam setiap kegiatan dan sistem organisasi untuk menciptakan efisiensi dan inovasi.",
+    color: "from-yellow-500/10 to-yellow-400/5"
+  },
+  {
+    icon: Handshake, // atau Users2
+    title: "Budaya Profesional & Kolaboratif",
+    description: "Membangun budaya organisasi yang profesional, kolaboratif, dan bertanggung jawab dalam setiap pelaksanaan program kerja.",
+    color: "from-purple-500/10 to-purple-400/5"
+  },
+  {
+    icon: Megaphone, // atau Lightbulb
+    title: "Wadah Aspirasi & Potensi",
+    description: "Menjadi wadah aspirasi serta pengembangan potensi mahasiswa Administrasi Bisnis Sektor Publik secara terstruktur dan berkelanjutan.",
+    color: "from-red-500/10 to-red-400/5"
+  }
+].map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-3 hover:bg-gradient-to-br hover:from-primary/8 hover:to-accent/5 group cursor-pointer border-2 border-transparent hover:border-primary/15"
